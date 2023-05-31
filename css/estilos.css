@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+
+body {
+    font-family: 'montserrat', sans-serif;
+}
+
+.wrapper {
+    background-image: url(../img/30_5_2023\ 05_10_08.png);
+    background-size: cover;
+    color: black;
+    height: 78em;
+    background-color: black;
+    border: solid 5px white;
+}
+
+.menu a {
+    margin: 2% 1%;
+    padding: 0.2% 0.4%;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 8px;
+    border: inset 4px grey;
+    font-size: 20px;
+}
+
+.menu {
+    margin: 2% 0%;
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.menu a:hover {
+    background-color: grey;
+    color: yellow;
+    transition: ease-in .3s;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.main h1 {
+    font-size: 4em;
+    text-shadow: 5px 5px 1px white;
+}
+
+.main p {
+    margin: 2% 10%;
+    font-size: 1.5em;
+    color: rgb(216, 216, 21);
+    font-weight: 600;
+    background-color: rgb(48, 47, 47);
+    border-radius: 20px;
+    padding: 2%;
+    border: inset 7px rgb(179, 173, 173);
+}
+
+.main p:hover {
+    font-size: 1.5em;
+    background-color: rgb(216, 216, 21);
+    border-radius: 20px;
+    border: inset 7px black;
+    transition: ease-in .3s;
+    color: black;
+    padding: 2%;
+}
+.main img {
+    border: 7px solid black;
+    border-radius: 20px;
+    width: 80%;
+    height: 80%;
+}
+
+.main img:hover {
+    border: 7px solid black;
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    transition: ease-out .5s;
+    transform: scale(1.1);
+}
+
+#span-maximo {
+    color: white;
+    text-shadow: 5px 5px 1px black;
+}
+
+#span-maximo:hover {
+    transition: ease-in .1s;
+    color: rgb(216, 216, 21);
+    text-shadow: 5px 5px 1px black;
+    font-size: 72px;
+}
+
+.download-cv {
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 69);
+}
+
+.download-cv:hover {
+    background-color: white;
+    color: black;
+    box-shadow: none;
+    transition: ease-in .2s;
+    transform: scale(1.1);
+}
+
+.about .download-cv{
+    margin: 2% 1%;
+    border: solid 3px rgb(216, 216, 21);
+}
+
+.about .download-cv:hover {
+    background-color: rgb(216, 216, 21);
+    color: black;
+    border: solid 3px white;
+    margin: 2% 1%;
+}
+
+.about {
+    background-color: white;
+    padding: 10% 0%;
+    border: solid 5px black;
+}
+
+.about img {
+    height: 100%;
+    width: 100%;
+    border: double 8px white;
+}
+
+.about-info {
+    padding: 12% 10%;
+    font-size: 20px;
+}
+
+.about-info h2 {
+    margin: 0% 5%;
+    font-size: 2em;
+    color: rgb(216, 216, 21);
+    text-shadow: 5px 5px 1px gray;
+}
+
+.about p {
+    margin: 2% 5%;
+    font-weight: 400;
+    background-color: rgb(48, 47, 47);
+    border-radius: 20px;
+    padding: 1%;
+    border: double 6px white;
+    color: rgb(216, 216, 21);
+}
+
+.about p:hover {
+    margin: 2% 5%;
+    font-weight: 400;
+    background-color: rgb(216, 216, 21);
+    border-radius: 20px;
+    padding: 1%;
+    border: double 6px white;
+    color: rgb(48, 47, 47);
+    transition: ease-in .3s;
+}
+
+
+.skills {
+    background-image: url(../img/5926349.jpg);
+    padding-top: 130px;
+    padding-bottom: 130px;
+    height: 100%;
+    width: 100%;
+}
+.skills .smartphone {
+    font-size: 3em;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border: solid 4px white;
+    margin: 5% 0%;
+    padding: 7px 0px;
+}
+
+.skills .pc {
+    font-size: 3em;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border: double 6px white;
+    padding: 10px 0px;
+    margin: 5% 30%;
+}
+
+.skills img {
+    background-color: white;
+    border-radius: 10px;
+    height: 50%;
+    border: solid 5px black;
+    padding: 10px;
+    color: white;
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: 10%;
+}
+
+.skills img:hover {
+    background-color: white;
+    border-radius: 10px;
+    height: 50%;
+    border: solid 5px black;
+    padding: 10px;
+    color: white;
+    max-width: 200px;
+    max-height: 200px;
+    transition: ease-in .2s;
+    transform: scale(1.1);
+}
+
+
+.skills .bloque-programa {}
+
+.skills p {
+    font-weight: 800;
+    font-size: 25px;
+    padding: 5px 0px;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    border: inset 4px white;
+    margin: 0px 10%;
+}
+
+#mercado-pago p{
+    font-size: 23px;
+    padding: 7px 0px;
+}
+.skills i{
+    color: rgb(216, 216, 21);;
+}
