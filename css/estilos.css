@@ -20,7 +20,6 @@ body {
 .logo h1 {
     color: white;
     max-height: 20px;
-
 }
 
 .main {
@@ -324,7 +323,6 @@ body {
 
 .footer-cliente {
     background-color: #ABEBC6;
-    padding-bottom: 20%;
 }
 
 .footer-cliente h3 {
@@ -342,6 +340,12 @@ body {
     max-width: 60%;
     max-height: 70%;
 
+}
+.ubicacion p {
+    color: #ABEBC6;
+    border-radius: 20px;
+    font-size: 1.2em;
+    margin: 5%;
 }
 .contacto {
     background-color: rgb(78, 78, 78);
