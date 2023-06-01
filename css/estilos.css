@@ -35,6 +35,11 @@ body {
     font-weight: 600;
     color: rgb(48, 47, 47);
 }
+
+.main h1:hover{
+    text-shadow: 5px 5px 1px gray;
+    transition: ease-in .5s;
+}
 .main .bi-mouse {
     font-size: 1em;
 }
