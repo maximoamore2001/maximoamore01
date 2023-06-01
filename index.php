@@ -14,22 +14,26 @@
 
 <body>
     <div class="container-fluid wrapper">
-            <main class="main row">
-                <div class="info-content col-sm-8 col-12 text-center">
-                    <h1><span id="span-maximo">Máximo</span> Amore</h1>
-                    <p>Apasionado desarrollador Front-end y Back-end,
-                        dedicado a crear sitios web funcionales y
-                        atractivos.
-                    </p>
-                    <a download href="#">
-                        <button class="download-cv">Download CV <i class="bi bi-download"></i></button>
-                    </a>
-                </div>
-                <div class="col-sm-4 text-center p-3 col-12">
-                    <img src="img/30_5_2023 07_26_33.png" alt="maximo amore picture">
-                </div>
-            </main>
+        <div class="row">
+            <div class="col-12 logo">
+                <H1><span>M</span>A</H1>
+            </div>
         </div>
+        <main class="main row">
+            <div class="info-content col-sm-8 col-12 text-center">
+                <h1>Máximo Amore<i class="bi bi-mouse"></i></h1>
+                <p>Desarrollador Front-end y Back-end
+                    dedicado a crear sitios web
+                </p>
+                <a download href="#">
+                    <button class="download-cv">Download CV <i class="bi bi-download"></i></button>
+                </a>
+            </div>
+            <div class="col-sm-4 text-center p-3 col-12">
+                <img src="img/30_5_2023 07_26_33.png" alt="maximo amore picture">
+            </div>
+        </main>
+    </div>
     </div>
     <div>
         <div class="container-fluid">
@@ -37,12 +41,16 @@
                 <div class="col-12 col-sm-5 pic d-none d-sm-none d-md-block">
                     <img src="img/DSC_0348.jpeg" alt="maximo amore portrait">
                 </div>
-                <div class="about-info text-center col-sm-7 mt-5 col-12">
-                    <h2>About Me</h2>
-                    <p>Soy un desarrollador web apasionado por la tecnología y entusiasta de la creatividad. Me encanta crear sitios web y aplicaciones, y siempre estoy buscando formas de mejorar mis habilidades en esta área. Aunque no tengo mucha experiencia, estoy emocionado por aprender y enfrentar nuevos desafíos en el campo del desarrollo web.Además de mi amor por la tecnología, el deporte ocupa un lugar importante en mi vida. Dedico tiempo a mantenerme en forma y participar en diferentes actividades deportivas. Creo en la importancia del equilibrio entre el trabajo y el bienestar físico, y el deporte me ayuda a mantenerme centrado y motivado en todas las áreas de mi vida.
-                    </p>
-                    <a href="github.com" target="_blank"><button class="download-cv"><i class="bi bi-github"></i></button></a>
-                    <a href="linkedin.com" target="_blank"><button class="download-cv"><i class="bi bi-linkedin"></i></button></a>
+                <div class="about-info  col-sm-7 mt-5 col-12">
+                    <div>
+                        <h2>About Me</h2>
+                        <p>Soy un desarrollador web apasionado por la tecnología y entusiasta de la creatividad. Me encanta crear sitios web y aplicaciones, y siempre estoy buscando formas de mejorar mis habilidades en esta área. Aunque no tengo mucha experiencia, estoy emocionado por aprender y enfrentar nuevos desafíos en el campo del desarrollo web.</p>
+                    </div>
+                    <div class="text-center">
+
+                        <a href="github.com" target="_blank"><button class="download-cv "><i class="bi bi-github"></i></button></a>
+                        <a href="linkedin.com" target="_blank"><button class="download-cv "><i class="bi bi-linkedin"></i></button></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -54,56 +62,56 @@
                 <h2 class="pc d-none d-sm-none d-md-block">tools <i class="bi bi-tools"></i></h2>
                 <h2 class="smartphone d-block d-sm-block d-md-none">tools <i class="bi bi-tools"></i></h2>
             </div>
-            <div class="row bloque-programa pt-5">
-                <div class="col-sm-3 col-6 text-center">
+            <div class="row bloque-programa pt-5" id="">
+                <div class="col-sm-3 col-6 text-center html1" id="html1">
                     <p>HTML</p>
                     <img src="img/html5-logo-html-logo-0.png" alt="">
                 </div>
-                <div class="col-sm-3 col-6 text-center">
+                <div class="col-sm-3 col-6 text-center css2" id="css2">
                     <p>CSS</p>
                     <img src="img/css.png" alt="">
                 </div>
-                <div class="col-sm-3 col-6 text-center">
+                <div class="col-sm-3 col-6 text-center js3" id="js3">
                     <p>JAVASCRIPT</p>
                     <img src="img/javascript.jpeg" alt="">
                 </div>
-                <div class="col-sm-3 col-6 text-center">
+                <div class="col-sm-3 col-6 text-center git4" id="git4">
                     <p>GIT</p>
                     <img src="img/git.png" alt="">
                 </div>
             </div>
             <div class="row bloque-programa">
-                <div class="col-sm-3 col-6 text-center">
+                <div class="col-sm-3 col-6 text-center php5" id="php5">
                     <p>PHP</p>
                     <img src="img/hwUcGZ41_400x400.jpg" alt="">
                 </div>
-                <div class="col-sm-3 col-6 text-center">
+                <div class="col-sm-3 col-6 text-center laravel6" id="laravel6">
                     <p>LARAVEL</p>
                     <img src="img/LALARAVELlogo-laravel-1024.png" alt="">
                 </div>
-                <div class="col-sm-3 col-6 text-center">
+                <div class="col-sm-3 col-6 text-center apache7" id="apache7">
                     <p>APACHE</p>
                     <img src="img/apache0020_999_1622694565_apache_256.png" alt="">
                 </div>
                 <div class="col-sm-3 col-6 text-center" id="mercado-pago">
-                    <p>MERCADO PAGO</p>
+                    <p>MERCADOPAGO</p>
                     <img src="img/gUjuxmmd_400x400.jpg" alt="">
                 </div>
             </div>
             <div class="row bloque-programa">
-                <div class="col-sm-3 col-6 text-center">
+                <div class="col-sm-3 col-6 text-center mysql8" id="mysql8">
                     <p>MYSQL</p>
                     <img src="img/mariadb-logo-400x400.png" alt="">
                 </div>
-                <div class="col-sm-3 col-6 text-center">
+                <div class="col-sm-3 col-6 text-center bs9" id="bs9">
                     <p>BOOTSTRAP</p>
                     <img src="img/C9QJ7V3X.png" alt="">
                 </div>
-                <div class="col-sm-3 col-6 text-center">
+                <div class="col-sm-3 col-6 text-center reactjs10" id="reactjs10">
                     <p>REACT.JS</p>
                     <img src="img/OYIaJ1KK.png" alt="">
                 </div>
-                <div class="col-sm-3 col-6 text-center">
+                <div class="col-sm-3 col-6 text-center jquery11" id="jquery11">
                     <p>JQUERY</p>
                     <img src="img/lxEKmMnB_400x400.jpg" alt="">
                 </div>
