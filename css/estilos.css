@@ -13,10 +13,11 @@ body {
     background-color: #ABEBC6;
 }
 
-.logo span{
+.logo span {
     color: black;
 }
-.logo h1{
+
+.logo h1 {
     color: white;
     max-height: 20px;
 
@@ -35,15 +36,18 @@ body {
     font-weight: 600;
     color: rgb(48, 47, 47);
     transition: ease-in .3s;
+    text-shadow: 5px 5px 1px gray;
 }
 
-.main h1:hover{
-    text-shadow: 5px 5px 1px gray;
+.main h1:hover {
+    transform: translate(0px, -2px);
     transition: ease-in .3s;
 }
+
 .main .bi-mouse {
     font-size: 1em;
 }
+
 /* primer parrafo */
 .main p {
     margin: 2% 10%;
@@ -71,7 +75,7 @@ body {
 }
 
 /* foto en blanco y negro */
-.main img { 
+.main img {
     margin-top: 10%;
     border: 2px solid black;
     border-radius: 40px;
@@ -144,6 +148,7 @@ body {
     transition: ease-in .5s;
     box-shadow: 12px 10px rgba(43, 42, 42, 0.342);
 }
+
 .about img:hover {
     height: 100%;
     width: 100%;
@@ -270,48 +275,76 @@ body {
     color: #ABEBC6;
     ;
 }
-#html1 p{
+
+#html1 p {
     background-color: #e44d26;
 }
 
 
-#css2   p{
-    background-color: #0d73b7;    
-}  
+#css2 p {
+    background-color: #0d73b7;
+}
 
-#js3   p{
+#js3 p {
     background-color: #eddc50;
 }
 
-#git4   p{
+#git4 p {
     background-color: #ef4e30;
 }
 
-#php5   p{
+#php5 p {
     background-color: #fefefe;
     color: black;
 }
 
-#laravel6   p{
+#laravel6 p {
     background-color: #ff756b;
 }
 
-#apache7   p{
+#apache7 p {
     background-color: #cc2032;
 }
 
-#mysql8   p{
+#mysql8 p {
     background-color: #002b41;
 }
 
-#bs9   p{
+#bs9 p {
     background-color: #462d6c;
 }
 
-#reactjs10   p{
+#reactjs10 p {
     background-color: #61dbfb;
 }
 
 #jquery11 p {
     background-color: #1e77af;
+}
+
+.footer-cliente {
+    background-color: #49775c;
+}
+
+.footer-cliente h3 {
+    margin: 4%;
+    font-weight: 600;
+    color: white;
+    text-shadow: 3px 3px 0px #ABEBC6;
+    font-size: 2.3em;
+}
+.ubicacion {
+    background-color: rgb(48, 47, 47);
+}
+.contacto {
+    background-color: rgb(78, 78, 78);
+}
+.contacto p{
+    color: #ABEBC6;
+    border-radius: 20px;
+    font-size: 1.2em;
+    margin: 5%;
+}
+.contacto a{
+    font-size: 2.5em;
 }
