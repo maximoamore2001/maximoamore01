@@ -34,11 +34,12 @@ body {
     font-size: 3em;
     font-weight: 600;
     color: rgb(48, 47, 47);
+    transition: ease-in .3s;
 }
 
 .main h1:hover{
     text-shadow: 5px 5px 1px gray;
-    transition: ease-in .5s;
+    transition: ease-in .3s;
 }
 .main .bi-mouse {
     font-size: 1em;
