@@ -323,7 +323,8 @@ body {
 }
 
 .footer-cliente {
-    background-color: #49775c;
+    background-color: #ABEBC6;
+    padding-bottom: 20%;
 }
 
 .footer-cliente h3 {
@@ -338,8 +339,9 @@ body {
     padding-bottom: 10%;
 }
 .ubicacion iframe{
-    max-width: 70%;
+    max-width: 60%;
     max-height: 70%;
+
 }
 .contacto {
     background-color: rgb(78, 78, 78);
