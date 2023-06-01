@@ -6,41 +6,13 @@ body {
 }
 
 .wrapper {
-    background-image: url(../img/30_5_2023\ 05_10_08.png);
+    /* primer bloque */
     background-size: cover;
     color: black;
-    height: 78em;
-    background-color: black;
-    border: solid 5px white;
+    height: 60em;
+    background-color: #F9E79F;
 }
 
-.menu a {
-    margin: 2% 1%;
-    padding: 0.2% 0.4%;
-    color: white;
-    text-decoration: none;
-    background-color: black;
-    border-radius: 8px;
-    border: inset 4px grey;
-    font-size: 20px;
-}
-
-.menu {
-    margin: 2% 0%;
-    list-style: none;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 1em;
-}
-
-.menu a:hover {
-    background-color: grey;
-    color: yellow;
-    transition: ease-in .3s;
-}
 
 .main {
     display: grid;
@@ -48,86 +20,91 @@ body {
     align-items: center;
 }
 
+/* Nombre y APELLIDO tamaño y sombra */
 .main h1 {
-    font-size: 4em;
-    text-shadow: 5px 5px 1px white;
+    margin-top: 5%;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: rgb(48, 47, 47);
 }
 
+/* primer parrafo */
 .main p {
     margin: 2% 10%;
-    font-size: 1.5em;
-    color: rgb(216, 216, 21);
+    font-size: 1.2em;
+    color: #F9E79F;
     font-weight: 600;
     background-color: rgb(48, 47, 47);
     border-radius: 20px;
     padding: 2%;
-    border: inset 7px rgb(179, 173, 173);
+    border: inset 3px #F9E79F;
+
 }
 
+/* primer parrafo hover */
 .main p:hover {
-    font-size: 1.5em;
-    background-color: rgb(216, 216, 21);
+    transform: scale(1.02);
+    font-size: 1.2em;
+    background-color: #F9E79F;
     border-radius: 20px;
-    border: inset 7px black;
+    border: inset 3px black;
     transition: ease-in .3s;
     color: black;
     padding: 2%;
 }
-.main img {
-    border: 7px solid black;
-    border-radius: 20px;
-    width: 80%;
-    height: 80%;
+
+/* foto en blanco y negro */
+.main img { 
+    margin-top: 10%;
+    border: 2px solid black;
+    border-radius: 40px;
+    width: 88%;
+    height: 88%;
 }
 
+/* foto en blanco y negro HOVER */
 .main img:hover {
-    border: 7px solid black;
-    width: 80%;
-    height: 80%;
-    border-radius: 20px;
+    border: 2px solid black;
+    width: 88%;
+    height: 88%;
+    border-radius: 80px;
     transition: ease-out .5s;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
-#span-maximo {
-    color: white;
-    text-shadow: 5px 5px 1px black;
-}
+/* colores de el nombre MAXIMO */
 
-#span-maximo:hover {
-    transition: ease-in .1s;
-    color: rgb(216, 216, 21);
-    text-shadow: 5px 5px 1px black;
-    font-size: 72px;
-}
 
+
+/* BOTON GENERICO */
 .download-cv {
-    font-weight: 600;
+    font-weight: 400;
     padding: 10px 20px;
     background-color: black;
     color: white;
-    border: none;
     border-radius: 20px;
-    margin-top: 10px;
+    margin-top: 6px;
     cursor: pointer;
-    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 69);
+    border: solid 2px white;
 }
 
+
 .download-cv:hover {
-    background-color: white;
+    background-color: #F9E79F;
     color: black;
     box-shadow: none;
     transition: ease-in .2s;
     transform: scale(1.1);
+    border: solid 2px rgb(48, 47, 47);
 }
 
-.about .download-cv{
+.about .download-cv {
     margin: 2% 1%;
-    border: solid 3px rgb(216, 216, 21);
+    border: solid 3px #F9E79F;
 }
 
 .about .download-cv:hover {
-    background-color: rgb(216, 216, 21);
+    background-color: #F9E79F;
     color: black;
     border: solid 3px white;
     margin: 2% 1%;
@@ -136,13 +113,21 @@ body {
 .about {
     background-color: white;
     padding: 10% 0%;
-    border: solid 5px black;
 }
 
 .about img {
     height: 100%;
     width: 100%;
-    border: double 8px white;
+    border: solid 2px #F9E79F;
+    border-radius: 20px;
+}
+.about img:hover {
+    height: 100%;
+    width: 100%;
+    border: solid 2px #F9E79F;
+    border-radius: 20px;
+    transition: ease-in-out .2s;
+    transform: scale(1.01);
 }
 
 .about-info {
@@ -153,7 +138,7 @@ body {
 .about-info h2 {
     margin: 0% 5%;
     font-size: 2em;
-    color: rgb(216, 216, 21);
+    color: #F9E79F;
     text-shadow: 5px 5px 1px gray;
 }
 
@@ -163,33 +148,34 @@ body {
     background-color: rgb(48, 47, 47);
     border-radius: 20px;
     padding: 1%;
-    border: double 6px white;
-    color: rgb(216, 216, 21);
+    border: solid 4px #F9E79F;
+    color: #F9E79F;
 }
 
 .about p:hover {
     margin: 2% 5%;
     font-weight: 400;
-    background-color: rgb(216, 216, 21);
-    border-radius: 20px;
+    background-color: #F9E79F;
+    border-radius: 30px;
     padding: 1%;
-    border: double 6px white;
+    border: inset 4px black;
     color: rgb(48, 47, 47);
-    transition: ease-in .3s;
+    transition: ease-in .2s;
 }
 
 
 .skills {
-    background-image: url(../img/5926349.jpg);
+    background-color: rgb(48, 47, 47);
     padding-top: 130px;
     padding-bottom: 130px;
     height: 100%;
     width: 100%;
 }
+
 .skills .smartphone {
     font-size: 3em;
     color: white;
-    background-color: black;
+    background-color: #c7b87a;
     border-radius: 10px;
     border: solid 4px white;
     margin: 5% 0%;
@@ -199,18 +185,18 @@ body {
 .skills .pc {
     font-size: 3em;
     color: white;
-    background-color: black;
+    background-color: #c7b87a;
     border-radius: 10px;
-    border: double 6px white;
-    padding: 10px 0px;
-    margin: 5% 30%;
+    border: solid 4px white;
+    margin: 1% 35%;
+    padding-bottom: 3px;
 }
 
 .skills img {
     background-color: white;
     border-radius: 10px;
     height: 50%;
-    border: solid 5px black;
+    border: solid 3px #c7b87a;
     padding: 10px;
     color: white;
     max-width: 200px;
@@ -220,35 +206,37 @@ body {
 
 .skills img:hover {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 30px;
     height: 50%;
-    border: solid 5px black;
+    border: solid 3px white;
     padding: 10px;
     color: white;
     max-width: 200px;
     max-height: 200px;
     transition: ease-in .2s;
-    transform: scale(1.1);
+    transform: scale(1.24);
 }
 
 
 .skills .bloque-programa {}
 
 .skills p {
-    font-weight: 800;
-    font-size: 25px;
-    padding: 5px 0px;
+    font-weight: 400;
+    font-size: 1.1em;
+    padding: 0.2% 0%;
     color: white;
-    background-color: black;
+    background-color: #c7b87a;
     border-radius: 20px;
-    border: inset 4px white;
-    margin: 0px 10%;
+    border: solid 2px #F9E79F;
+    margin: 0px 20%;
 }
 
-#mercado-pago p{
-    font-size: 23px;
-    padding: 7px 0px;
+#mercado-pago p {
+    font-size: 87%;
+    padding: 5px 0px;
 }
-.skills i{
-    color: rgb(216, 216, 21);;
+
+.skills i {
+    color: #F9E79F;
+    ;
 }
