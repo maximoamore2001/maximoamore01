@@ -136,7 +136,8 @@ body {
 }
 
 .about {
-    background-color: white;
+    background-image: url(../img/4847466.jpg);
+    background-size: cover;
     padding: 10% 0%;
 }
 
@@ -354,8 +355,8 @@ body {
     margin: 0px 5%;
 }
 .seccion-3{
-    padding-bottom: 2%;
-    background-image: url(../img/rm309-adj-05.jpg);
+    padding-bottom: 6%;
+    background-image: url(../img/4847466.jpg);
     background-size: cover;
 
 }
@@ -365,8 +366,10 @@ body {
     color: white;
     background-color: #0A7B9A;
     border-radius: 10px;
-    margin: 2% 30%;
     padding: 7px 0px;
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 
@@ -385,8 +388,9 @@ body {
 .tarjeta {
     border: solid 2px gray;
     box-shadow: 8px 5px 0px gray;
-    padding: 3px;
+    padding: 0px;
     transition: ease-in .1s;
+    margin-top: 5%;
 }
 
 .tarjeta:hover {
