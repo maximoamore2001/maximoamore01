@@ -215,7 +215,7 @@ body {
     padding: 7px 0px;
 }
 
-.skills .pc  {
+.skills .pc {
     box-shadow: 12px 7px rgba(43, 42, 42, 0.342);
     font-size: 2em;
     color: white;
@@ -347,19 +347,21 @@ body {
     color: #ABEBC6;
     border-radius: 20px;
     font-size: 1.2em;
-    margin: 5%;
+    padding-top: 8%;
 }
 
 .contacto a {
     font-size: 2.5em;
     margin: 0px 5%;
 }
-.seccion-3{
+
+.seccion-3 {
     padding-bottom: 6%;
     background-image: url(../img/4847466.jpg);
     background-size: cover;
 
 }
+
 .proyecto {
     box-shadow: 12px 7px rgba(43, 42, 42, 0.342);
     font-size: 2em;
@@ -372,32 +374,45 @@ body {
     margin-right: 30%;
 }
 
-
 .tarjeta img {
     max-width: 100%;
     max-height: 100%;
 }
 
-.tarjeta p,
 .tarjeta h4 {
     background-color: #ABEBC6;
     width: 100%;
-    color: gray;
+    color: black;
+    padding: 10%;
+    border: solid 3px black;
 }
 
+.tarjeta p {
+    background-color: grey;
+    width: 100%;
+    color: black;
+    padding: 10%;
+    border: solid 3px black;
+}
+
+
 .tarjeta {
-    border: solid 2px gray;
-    box-shadow: 8px 5px 0px gray;
+    border: solid 2px black;
+    box-shadow: 4px 5px 0px gray;
     padding: 0px;
     transition: ease-in .1s;
     margin-top: 5%;
 }
 
 .tarjeta:hover {
+    border: solid 6px #61dbfb;
+    background-color: #61dbfb;
+    box-shadow: 16px 20px 0px rgba(128, 128, 128, 0.527);
     transform: scale(1.02);
     transition: ease-in .1s;
+
 }
 
 .proyectos-tarjetas {
-    padding: 2% 0%;
+    padding: 1% 0%;
 }
