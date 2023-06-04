@@ -1,38 +1,4 @@
-<?php
-$pg = "contacto";
 
-if ($_POST) {
-    $nombre = $_POST["txtNombre"];
-    $correo = $_POST["txtCorreo"];
-    $telefono = $_POST["txtTelefono"];
-    $mensaje = $_POST["txtMensaje"];
-
-    //varios destinatarios
-    $para = "maxiamorerc88@gmail.com";
-    $titulo = 'recibiste un mensaje de tu web';
-
-    //mensaje
-    $cuerpo = "
-    Nombre: $nombre <br>
-    Correo: $correo <br>
-    Telefono: $telefono <br>
-    Mensaje: $mensaje
-    ";
-
-    //para enviar un correo html, debe establecerse la cabecera content-type
-    $cabeceras = 'MIME-Version: 1.0' . "\r\n";
-    $cabeceras = 'content-type: text/html; charset=UTF-8' . "\r\n";
-
-    //cabeceras adicionales
-
-    $cabeceras = 'to: maxiamorerc88@gmail.com' . "\r\n";
-    $cabeceras = 'from: contacto@maximoamore.com.ar' . "\r\n";
-
-    //enviarlo
-    //mail($para, $titulo, $cuerpo, $cabeceras);
-    header("location: confirmacion_envio.php");
-}
-?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -208,9 +174,6 @@ if ($_POST) {
                         </div>
                         <div class="pb-3">
                             <input type="email" name="txtcorreo" id="txtcorreo" placeholder="correo" class="form-control" required>
-                        </div>
-                        <div class="pb-3">
-                            <input type="text" name="txttelefono" id="txttelefono" placeholder="telefono/whatsapp" class="form-control" required>
                         </div>
                         <div class="pb-3">
                             <textarea name="txtmensaje" id="txtmensaje" cols="30" rows="10" placeholder="mensaje" class="form-control" required></textarea>
