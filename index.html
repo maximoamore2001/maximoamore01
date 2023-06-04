@@ -1,26 +1,36 @@
 <?php
-// Comprobar si el formulario ha sido enviado
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Obtener los valores enviados por el formulario
-    $nombre = $_POST["nombre"];
-    $email = $_POST["email"];
-    $mensaje = $_POST["mensaje"];
+$pg = "contacto";
 
-    // Validar los campos del formulario
-    if (empty($nombre) || empty($email) || empty($mensaje)) {
-        echo "Por favor, complete todos los campos.";
-    } else {
-        // Enviar el correo electrónico
-        $to = "cybertechrosario@gmail.com";
-        $subject = "Nuevo mensaje del formulario";
-        $body = "Nombre: $nombre\nEmail: $email\nMensaje: $mensaje";
+if ($_POST) {
+    $nombre = $_POST["txtNombre"];
+    $correo = $_POST["txtCorreo"];
+    $telefono = $_POST["txtTelefono"];
+    $mensaje = $_POST["txtMensaje"];
 
-        if (mail($to, $subject, $body)) {
-            echo "Mensaje enviado con éxito.";
-        } else {
-            echo "Hubo un error al enviar el mensaje.";
-        }
-    }
+    //varios destinatarios
+    $para = "maxiamorerc88@gmail.com";
+    $titulo = 'recibiste un mensaje de tu web';
+
+    //mensaje
+    $cuerpo = "
+    Nombre: $nombre <br>
+    Correo: $correo <br>
+    Telefono: $telefono <br>
+    Mensaje: $mensaje
+    ";
+
+    //para enviar un correo html, debe establecerse la cabecera content-type
+    $cabeceras = 'MIME-Version: 1.0' . "\r\n";
+    $cabeceras = 'content-type: text/html; charset=UTF-8' . "\r\n";
+
+    //cabeceras adicionales
+
+    $cabeceras = 'to: maxiamorerc88@gmail.com' . "\r\n";
+    $cabeceras = 'from: contacto@maximoamore.com.ar' . "\r\n";
+
+    //enviarlo
+    //mail($para, $titulo, $cuerpo, $cabeceras);
+    header("location: confirmacion_envio.php");
 }
 ?>
 <!DOCTYPE html>
@@ -187,18 +197,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <a href="github.com" target="_blank"><button class="download-cv "><i class="bi bi-envelope"></i></button></a>
                 <a href="github.com" target="_blank"><button class="download-cv "><i class="bi bi-facebook"></i></button></a>
             </div>
-            <form method="POST" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre"><br><br>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email"><br><br>
-
-                <label for="mensaje">Mensaje:</label><br>
-                <textarea id="mensaje" name="mensaje" rows="4" cols="30"></textarea><br><br>
-
-                <input type="submit" value="Enviar">
-            </form>
-
+            <div class="row">
+                <div class="col-12 col-sm-6 contactotexto">
+                    <p>te invito a que te contactes enviandome un mensaje o bien por whatsapp.</p>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <form action="form.php" method="POST">
+                        <div class="pb-3">
+                            <input type="text" name="txtnombre" id="txtnombre" placeholder="nombre" class="form-control" required>
+                        </div>
+                        <div class="pb-3">
+                            <input type="email" name="txtcorreo" id="txtcorreo" placeholder="correo" class="form-control" required>
+                        </div>
+                        <div class="pb-3">
+                            <input type="text" name="txttelefono" id="txttelefono" placeholder="telefono/whatsapp" class="form-control" required>
+                        </div>
+                        <div class="pb-3">
+                            <textarea name="txtmensaje" id="txtmensaje" cols="30" rows="10" placeholder="mensaje" class="form-control" required></textarea>
+                        </div class="pb-3">
+                        <div>
+                            <button type="submit" id="btnenviar" name="btnenviar" class="btn px-4">ENVIAR</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
