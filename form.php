@@ -18,7 +18,7 @@ $asunto = "este mail fue enviado de maximoamore";
 mail($para , $asunto , utf8_decode($mensaje), $header);
 
 //redireccionar al haber enviado el form
-header("location:new.html");
+header("location: new.html");
 
 
 ?>
