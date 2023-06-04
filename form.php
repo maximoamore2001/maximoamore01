@@ -1,13 +1,13 @@
 <?php
 
-$nombre = $_POST["txtNombre"];
-$mail = $_POST["txtCorreo"];
-$mensaje = $_POST["txtMensaje"];
+$nombre = $_POST["nombre"];
+$mail = $_POST["correo"];
+$mensaje = $_POST["mensajes"];
 
 //como me va a llegar el cuerpo del  mail a mi , lo que la gente escribio en el form
-$mensaje = "este mensaje fue enviado por " . $nombre . ",/r/n";
-$mensaje .= "su e-mail es: " . $mail . ",/r/n";
-$mensaje .= "mensaje: " . $_POST["mensaje"] . ",/r/n";
+$mensaje = "este mensaje fue enviado por " . $nombre;
+$mensaje .= "su e-mail es: " . $mail;
+$mensaje .= "mensaje: " . $_POST["mensaje"];
 $mensaje .= "enviado el " . date("d/m/Y", time());
 
 $para = "cybertechrosario@gmail.com";
