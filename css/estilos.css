@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Dancing Script', cursive;
 }
@@ -319,37 +318,39 @@ body {
     background-color: #1e77af;
 }
 
-.footer-cliente h3 {
-    margin: 4%;
-    font-weight: 600;
-    color: white;
-    text-shadow: 3px 3px 0px #ABEBC6;
-    font-size: 2.3em;
-}
 
 .ubicacion {
     background-color: rgb(48, 47, 47);
+    padding: 2% 0%;
 }
 
-.contacto {
-    background-color: rgb(78, 78, 78);
-    display: block;
-    margin: auto;
-    padding-bottom: 10%;
-    padding-top: 5%;
-}
-
-.contacto p,
 .ubicacion p {
+    margin: 2% 5%;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: rgb(48, 47, 47);
+    padding: 1% 0%;
     color: #ABEBC6;
-    border-radius: 20px;
-    font-size: 1.2em;
-    padding-top: 8%;
+    padding-left: 2%;
+}
+#formulario{
+    background-color: rgb(48, 47, 47);
+}
+#formulario form{
+    padding-top: 15%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+#formulario h3{
+    color: white;
+    text-shadow: 2px 2px 1px #ABEBC6;
+    padding-bottom: 2%;
+    
 }
 
-.contacto a {
-    font-size: 2.5em;
-    margin: 0px 5%;
+.ubicacion a {
+    font-size: 1.2em;
+    margin: 0px 2%;
 }
 
 .seccion-3 {
