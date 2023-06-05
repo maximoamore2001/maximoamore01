@@ -2,13 +2,7 @@ body {
     font-family: 'Dancing Script', cursive;
 }
 
-.wrapper {
-    /* primer bloque */
-    background-size: cover;
-    color: black;
-    height: 60em;
-    background-color: #F1E949;
-}
+
 
 .logo span {
     color: black;
@@ -16,18 +10,23 @@ body {
 
 .logo h1 {
     color: white;
-    max-height: 20px;
+    max-height: 10px;
+}
+
+.logo {
+    background-color: #F1E949;
 }
 
 .main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    background-color: #F1E949;
+    height: 100vh;
 }
 
 /* Nombre y APELLIDO tamaño y sombra */
 .main h1 {
-    margin-top: 5%;
     font-size: 3em;
     font-weight: 600;
     color: rgb(48, 47, 47);
@@ -45,13 +44,13 @@ body {
 
 /* primer parrafo */
 .main p {
-    margin: 2% 10%;
+    margin: 3% 10%;
     font-size: 1.2em;
     color: #F1E949;
     font-weight: 600;
     background-color: rgb(48, 47, 47);
     border-radius: 20px;
-    padding: 2%;
+    padding: 3%;
     border: inset 3px #F1E949;
     transition: ease-in .3s;
     box-shadow: 10px 7px rgba(43, 42, 42, 0.342);
@@ -73,17 +72,14 @@ body {
 .main img {
     width: 64%;
     height: 64%;
-    margin-top: 10%;
     border: 3px solid rgb(36, 36, 36);
     border-radius: 1000px;
-
     transition: ease-in .5s;
     box-shadow: 5px 5px rgba(43, 42, 42, 0.342);
 }
 
 /* foto en blanco y negro HOVER */
 .main img:hover {
-    border-radius: 1000px;
     transition: ease-out .5s;
     transform: scale(1.05);
 }
@@ -130,9 +126,9 @@ body {
 }
 
 .about {
-    background-color: white;
+    background-color: rgb(48, 47, 47);
     background-size: cover;
-    padding: 10% 0%;
+    padding: 5% 0%;
 }
 
 .about img {
@@ -200,10 +196,10 @@ body {
 }
 
 .skills .smartphone {
-    box-shadow: 12px 7px rgba(43, 42, 42, 0.342);
+    box-shadow: 12px 7px rgb(91, 94, 6);
     font-size: 2em;
     color: white;
-    background-color: #0A7B9A;
+    background-color: black;
     border-radius: 10px;
     margin: 10% 20%;
     padding: 7px 0px;
@@ -213,7 +209,7 @@ body {
     box-shadow: 12px 7px rgba(43, 42, 42, 0.342);
     font-size: 2em;
     color: white;
-    background-color: #0A7B9A;
+    background-color: black;
     border-radius: 10px;
     margin: 1% 40%;
     padding-bottom: 3px;
@@ -317,46 +313,9 @@ body {
 }
 
 
-.ubicacion {
-    background-color: rgb(48, 47, 47);
-    padding: 2% 0%;
-}
-.ubicacion iframe{
-    width: 50%;
-}
-
-.ubicacion p {
-    margin: 2% 5%;
-    font-weight: 400;
-    font-size: 18px;
-    background-color: rgb(48, 47, 47);
-    padding: 1% 0%;
-    color: #F1E949;
-    padding-left: 2%;
-}
-.formularios{
-    background-color: rgb(48, 47, 47);
-}
-.formularios form{
-    padding-top: 15%;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-.formularios h3{
-    color: white;
-    text-shadow: 2px 2px 1px #F1E949;
-    padding-bottom: 2%;
-    
-}
-
-.ubicacion a {
-    font-size: 1.2em;
-    margin: 0px 2%;
-}
-
 .seccion-3 {
-    padding-bottom: 6%;
-    background-color: white;
+    padding: 6% 0%;
+    background-color: rgb(48, 47, 47);
     background-size: cover;
 
 }
@@ -365,12 +324,13 @@ body {
     box-shadow: 12px 7px rgba(43, 42, 42, 0.342);
     font-size: 2em;
     color: white;
-    background-color: #0A7B9A;
+    background-color: black;
     border-radius: 10px;
     padding: 7px 0px;
-    margin-top: 5%;
-    margin-left: 30%;
-    margin-right: 30%;
+    width: 250px;
+    padding: 6px;
+    display: block;
+    margin: auto;
 }
 
 .tarjeta img {
@@ -389,29 +349,87 @@ body {
 .tarjeta p {
     background-color: grey;
     width: 100%;
-    color: black;
+    color: white;
     padding: 10%;
     border: solid 3px black;
 }
 
 
 .tarjeta {
-    border: solid 2px black;
-    box-shadow: 4px 5px 0px gray;
     padding: 0px;
     transition: ease-in .1s;
     margin-top: 5%;
+    transform: scale(1.02);
+    transition: ease-in .1s;
 }
 
 .tarjeta:hover {
-    border: solid 6px #61dbfb;
-    background-color: #61dbfb;
-    box-shadow: 16px 20px 0px rgba(128, 128, 128, 0.527);
+    border: solid 6px #F1E949;
+    background-color: #F1E949;
     transform: scale(1.02);
     transition: ease-in .1s;
-
 }
 
 .proyectos-tarjetas {
     padding: 3% 0%;
+}
+
+
+.ubicacion {
+    background-color: rgb(48, 47, 47);
+    padding: 2% 0%;
+}
+
+.ubicacion iframe {
+    width: 50%;
+}
+
+.ubicacion p {
+    margin: 2% 5%;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: rgb(48, 47, 47);
+    padding: 1% 0%;
+    color: #F1E949;
+    padding-left: 2%;
+}
+
+.formularios {
+    background-color: rgb(48, 47, 47);
+}
+
+.formularios form {
+    padding-top: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.formularios h3 {
+    color: white;
+    text-shadow: 2px 2px 1px #F1E949;
+    padding-bottom: 2%;
+
+}
+
+.ubicacion a {
+    font-size: 1.2em;
+    margin: 0px 2%;
+}
+
+.confirmacion {
+    background-color: grey;
+    height: 100vw;
+    width: 100vw;
+}
+
+.confirmacion h1 {
+    padding: 20%;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-shadow: 4px 3px 1px #F1E949;
+    margin: auto;
+}
+.confirmacion p{
+    color: white;
+    font-size: 18px;
 }
